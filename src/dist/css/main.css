@@ -1,0 +1,48 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+}
+
+
+/* Style navbar  */
+
+.navbar {
+    position: fixed;
+    padding: 15px 0 15px 0;
+    width: 100%;
+}
+
+.navbar .nav-link a {
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar .nav-link a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Style navbar  */
+
+
+/* Style Home Page */
+
+header {
+    background: #212a31;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #212a31, #2e3944, #124e66);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #212a31, #2e3944, #124e66);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* Style Home Page */
