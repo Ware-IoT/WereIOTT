@@ -7,22 +7,24 @@ const NavbarComponent = () => {
   return (
     <div><Navbar expand="lg" className="bg-body-tertiary">
     <Container>
-      <Navbar.Brand href="#home">WereIot</Navbar.Brand>
+      <Navbar.Brand href="#home" className="fs-3 fw-bold">WereIot</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto">
+        <Nav className="mx-auto text-text-center">
           {navLinks.map((link) => {
             return(
               <div  className="nav-link" key={link.id}>
-                <NavLink to = {link.path}>{link.text}</NavLink>
+                <NavLink to = {link.path}  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""
+} end >{link.text}</NavLink>
                 
               </div>
             )
           }
         )}
         </Nav>
-        <div>
-          <button>Join With Us</button>
+        <div className="text-center">
+          <button className="btn btn-outline-danger rounded-2">Join With Us</button>
         </div>
 
 

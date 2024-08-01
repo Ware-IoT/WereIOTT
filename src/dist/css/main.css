@@ -1,5 +1,5 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Kufam", italic;
 }
 
 :root {
@@ -23,6 +23,7 @@
     padding: 5px 10px 5px 10px;
     font-weight: 500;
     text-decoration: none;
+    color: var(--navbar-color-text);
 }
 
 .navbar .nav-link a:hover {
@@ -32,15 +33,24 @@
 
 /* Style navbar  */
 
+.navbar .nav-link .active {
+    background-color: #3e515b;
+    color: #4d6471;
+}
+
+.navbar .nav-link .active {
+    color: var(--navbar-color);
+}
+
 
 /* Style Home Page */
 
 header {
     background: #212a31;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #212a31, #2e3944, #124e66);
+    background: -webkit-linear-gradient(to left, #698899, #4d6471, #2d3b43);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #212a31, #2e3944, #124e66);
+    background: linear-gradient(to left, #698899, #4d6471, #2d3b43);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
