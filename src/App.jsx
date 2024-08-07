@@ -8,6 +8,8 @@ import KelasPage from './pages/KelasPage';
 import TestimonialPage from './pages/TestimonialPage';
 import FaqPage from './pages/FaqPage';
 import SyaratKeten from './pages/SyaratKeten';
+import LoginForm from './components/LoginForm/LoginForm';
+import RegisterForm from './components/LoginForm/RegisterForm';
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
     <Route path="/testimonial" Component={TestimonialPage} />
     <Route path="/faq" Component={FaqPage} />
     <Route path="/syarat" Component={SyaratKeten} />
-    
+    <Route path="/Login" Component={LoginForm} />
+    <Route path="/Register" Component={RegisterForm} />
   </Routes>
    
     {/* <FooterComponents/> */}

@@ -11,35 +11,51 @@
 }
 
 
-/* Style navbar  */
+/* Navbar Styles */
 
 .navbar {
     position: fixed;
-    padding: 15px 0 15px 0;
+    top: 0;
     width: 100%;
+    padding: 15px 0;
+    z-index: 9999;
+    background-color: var(--navbar-color);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.navbar.color-active {
+    background-color: #f6f8fd;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid;
 }
 
 .navbar .nav-link a {
     padding: 5px 10px 5px 10px;
     font-weight: 500;
     text-decoration: none;
-    color: var(--navbar-color-text);
+    color: #2d3b43;
 }
 
 .navbar .nav-link a:hover {
     color: var(--secondary-color);
 }
 
-
-/* Style navbar  */
-
-.navbar .nav-link .active {
+.navbar .nav-link.active {
     background-color: #3e515b;
     color: #4d6471;
 }
 
-.navbar .nav-link .active {
-    color: var(--navbar-color);
+
+/* Navbar Color Styles */
+
+.navbar.color-active {
+    background-color: #f6f8fd;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #dc3545;
 }
 
 
@@ -47,12 +63,124 @@
 
 header {
     background: #212a31;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #698899, #4d6471, #2d3b43);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #698899, #4d6471, #2d3b43);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.homepage .header-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.homepage .header-box h1 span {
+    font-weight: 700;
+}
+
+.homepage,
+.header-box a {
+    line-height: 2;
+    color: #212a31;
+    font-weight: 500;
+}
+
+.homepage .header-box img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .homepage .header-box {
+        padding-top: 8rem;
+    }
+    .homepage .header-box img {
+        width: 400px;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .homepage .header-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1 {
+        font-size: 2.4rem;
+    }
+    .homepage .header-box p {
+        font-size: 14px;
+    }
+    .homepage .header-box img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .homepage .header-box h1 {
+        font-size: 2rem;
+    }
+    .homepage .header-box p {
+        font-size: 12px;
+    }
 }
 
 
-/* Style Home Page */
+/* Style HomePage bagian Keuntungan */
+
+.homepage .kelas {
+    background-color: #3e515b;
+    padding-bottom: 30px;
+    /* Further reduced padding */
+}
+
+.homepage .kelas .row:nth-child(1) {
+    padding-top: 50px;
+    /* Further reduced padding */
+    padding-bottom: 30px;
+    /* Further reduced padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.homepage .kelas .row:nth-child(1) h1 {
+    color: #000000;
+    margin-bottom: 10px;
+    /* Reduced margin */
+}
+
+.homepage .kelas .row:nth-child(1) p {
+    color: #000000;
+    margin-bottom: 10px;
+    /* Reduced margin */
+}
+
+.CardKeunggulan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.Card {
+    flex: 1 1 calc(33.33% - 10px);
+    max-width: 30%;
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardKeunggulan .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
